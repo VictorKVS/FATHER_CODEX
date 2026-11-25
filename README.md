@@ -44,6 +44,20 @@ Folders are proposed, not yet implemented.
 - Record tool invocations and evidence with timestamps; cryptographic signing must use an authorized key.
 - Prefer shared FATHER services to copying infrastructure into this repository.
 
+## AI Academy, Programmer Coach and Agent Factory
+
+**Единая точка входа:** [FATHER_CODEX Academy — архитектура и карта проекта](docs/academy/README.md).
+
+- [Школа ИИ-агентов (русский интерактивный MVP)](docs/school/index.html)
+- [Учебная программа CH01–CH07](docs/school/COURSE_PROGRAM_RU.md)
+- [Полное освоение теории школьником](docs/school/THEORY_MASTERY_SYSTEM_RU.md)
+- [Тренер программиста от новичка до senior track](docs/academy/FATHER_CODEX_PROGRAMMER_COACH_V1_RU.md)
+- [IDEA+](docs/protocols/FATHER_IDEA_PLUS_PROTOCOL_V1.md) и [Cost Engineering](docs/protocols/FATHER_COST_ENGINEERING_PROTOCOL_V1.md)
+- [Инженерный дашборд FATHER](docs/index.html)
+- [Библиотека первоисточников и Python-примеров ALINA](https://github.com/VictorKVS/alina-knowledge-worker/tree/feature/father-book-library-index-20261122/library/books/LIB-0040_Agentic_Design_Patterns)
+
+FATHER_CODEX — продуктовый репозиторий и место интеграции. ALINA — поставщик знаний и исходных примеров по контрактам; FATHER Core, UAG и POLYGON остаются общими службами, а не копируются. Наличие документа не означает реализацию, проведённые испытания или профессиональную квалификацию.
+
 ## Initial milestones
 
 - **M0** — Inventory current FATHER coding workflows, tool adapters and repositories.
