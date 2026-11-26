@@ -1,4 +1,6 @@
 # SEC-RISK-001 — Риск-ориентированный подход и FATHER Risk Engine
+> **Архитектурное решение IDEA+:** [Единый реестр рисков с первого этапа разработки (ADR)](../../architecture/ADR-IDEA-RISK-REGISTER-RU.md). Принцип закреплён; детальная методика и реализация отложены.
+
 
 **Версия:** 0.1 / 2026-11-26  
 **Статус:** RESEARCHED / ARCHITECTURE_PROPOSED / IMPLEMENTATION_NOT_STARTED / NOT_QUALIFIED  
