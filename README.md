@@ -73,3 +73,7 @@ Local workspace intended by project owner: `G:\\1\\FATHER_CODEX`
 Remote: https://github.com/VictorKVS/FATHER_CODEX
 
 License: **not yet selected**. Public visibility does not grant an open-source license.
+
+## Secure Development / CyberED S-235
+
+- [FATHER NextGen School — S-235 «Основы безопасной разработки»](docs/school/courses/CYBERED_S235_SECURE_DEVELOPMENT_RU.md): пять модулей CyberED, адаптация для школьников, студентов, Junior / Master / Senior и POLYGON. Это регистрация учебного трека, **не подтверждение прохождения курса**.
