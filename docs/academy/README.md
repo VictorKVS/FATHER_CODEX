@@ -118,3 +118,9 @@ Human commits, ADR, component/data/security/qualification contracts, SHA-256 pro
 ## Риск-ориентированный подход / Risk Engine
 
 - [SEC-RISK-001 — нормативная база, алгоритм и архитектура автоматического анализа и управления рисками](../reference/wiki/SEC-RISK-001.md). Статус: исследование и проектирование; ни работающий движок, ни проверки POLYGON не заявлены.
+
+## Второй сквозной слой при изучении программирования — Security & Cost
+
+- [Тренажёр проверки зависимостей и перехода EXPLORE → BUILD → RELEASE](../school/security-layer.html).
+- [Инженерный контракт S0–S7, Cost Gate, allow/block/review для версионированных зависимостей](../school/SECURITY_SECOND_LAYER_RU.md).
+- Статус: интерактивная демонстрация + политика; реальное CI-принуждение и POLYGON требуют отдельного исполнения и evidence.
