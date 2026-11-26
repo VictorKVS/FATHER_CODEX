@@ -33,6 +33,8 @@
 
 **Система статусов:** `DISCOVERED → TRIAGED → ASSESSED → TREATMENT_PROPOSED → APPROVED → IMPLEMENTED → CONTROL_TESTED → MONITORED`; `STALE`/ `BLOCKED`/ `NEEDS_REVIEW` при неполноте данных.
 
+**Метод S2:** [SEC-THREAT-MODELING-001 — модель угроз, DFD, STRIDE и трассировка к risk_id](SEC-THREAT-MODELING-001.md).
+
 ## Международные первоисточники
 
 | Источник | Официальная ссылка | Задача |
