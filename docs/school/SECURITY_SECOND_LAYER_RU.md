@@ -1,5 +1,8 @@
 # FATHER Academy — второй слой: Security & Cost by Design
 
+> **Закреплённое решение:** [Один реестр рисков с IDEA+](../architecture/ADR-IDEA-RISK-REGISTER-RU.md); S0 создаёт, S1–S7 обогащают, Cost Engineer и POLYGON участвуют. Детальную методику разработаем отдельно.
+
+
 **Версия:** 0.1 / 2026-11-26. **Статус:** LEARNING_POLICY_DOCUMENTED / INTERACTIVE_DEMO / AUTOMATED_ENFORCEMENT_NOT_IMPLEMENTED.  
 **Сайт:** [Интерактивная лаборатория выбора среды](security-layer.html).  
 **Сквозные контракты:** S0 → S1 → S2 → S3 → S4 → S5 → S6 → S7.  
