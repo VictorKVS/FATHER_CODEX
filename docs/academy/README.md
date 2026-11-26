@@ -105,3 +105,8 @@ Human commits, ADR, component/data/security/qualification contracts, SHA-256 pro
 
 - [Открыть трек S-235 «Основы безопасной разработки»](../school/courses/CYBERED_S235_SECURE_DEVELOPMENT_RU.md) — модули 0–4: введение и SSDLC, веб-угрозы (две части), защита окружения, безопасная разработка в SDL; уровни школьник → студент → Junior → Master → Senior, Teach-Back и POLYGON.
 - По ссылкам CyberED учитываются только темы опубликованной программы и пользовательский список LMS; закрытые лекции не копируются. Прогресс CyberED не эквивалентен квалификации FATHER.
+
+## Нормативный справочник и контекстные ссылки
+
+- [Справочник российской нормативной базы ИБ](../reference/security-regulations.html) — федеральные законы, постановления, приказы ФСТЭК/ФСБ и ГОСТы, поиск и цепочки применимости.
+- [CyberED S-235](../school/courses/CYBERED_S235_SECURE_DEVELOPMENT_RU.md) — нормативная база указана прямо в темах CIA, аутентификации, авторизации, SSDLC и DevSecOps.
