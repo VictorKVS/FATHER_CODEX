@@ -18,6 +18,8 @@
 
 **CyberED M0, урок 3:** [SEC-CVSS-001 — CVSS, критичность, EPSS/KEV и связка с Risk Register IDEA+](../../reference/wiki/SEC-CVSS-001.md). [Исходное видео M0_Ls3](https://learn.cyber-ed.ru/pluginfile.php/2047/mod_resource/content/3/M0_Ls3_CVSS%2C%20%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%BA%D1%80%D0%B8%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D1%83%D1%8F%D0%B7%D0%B2%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B5%D0%B9_PASHA_MST.mp4) недоступно для просмотра без доступа к LMS; материал Wiki основан на FIRST/NIST и не является расшифровкой лекции.
 
+**Практическая страница:** [CVE-2021-44228 Log4Shell — факты, CVSS v3.1, EPSS, KEV, интерактивный анализ риска](../vulnerability-case-study.html) (не является анализом закрытого видео).
+
 ## Источники
 
 - [Официальная опубликованная программа CyberED S-235](https://new.cyber-ed.ru/b2c-courses/osnovy-bezopasnoj-razrabotki/)
