@@ -92,3 +92,8 @@
 - [SEC-CVSS-001 — CVSS и серьёзность уязвимостей](SEC-CVSS-001.md)
 - [ADR — единый реестр рисков с IDEA+](../../architecture/ADR-IDEA-RISK-REGISTER-RU.md)
 - [Security & Cost — второй слой школы](../../school/SECURITY_SECOND_LAYER_RU.md)
+
+## Практикум TIMA DevSecOps (интерактивная демонстрация)
+
+- [Лаборатория угроз, деревьев атак и матрицы рисков](../../school/tima-threat-lab.html).
+- [Роль TIMA: оркестрация DevSecOps и контракты с ALINA, IDEA+, POLYGON](../../architecture/TIMA_DEVSECOPS_THREAT_ENGINE_RU.md).
