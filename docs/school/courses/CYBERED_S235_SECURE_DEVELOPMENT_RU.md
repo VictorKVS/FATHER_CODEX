@@ -166,3 +166,8 @@
 
 **Первичные государственные каталоги:** [официальный правовой портал](https://pravo.gov.ru/), [публикация правовых актов](https://publication.pravo.gov.ru/), [Росстандарт](https://protect.gost.ru/), [банк данных угроз ФСТЭК](https://bdu.fstec.ru/), [банк данных угроз АСУ ТП ФСТЭК](https://bduasutp.fstec.ru/).
 
+
+### Практика TIMA: моделирование угроз и матрица рисков
+
+- [Интерактивная лаборатория TIMA](../tima-threat-lab.html) — STRIDE, PASTA, LINDDUN, OCTAVE, деревья атак и тренажёр рисков.
+- [Контракт TIMA DevSecOps Threat Engineering](../../architecture/TIMA_DEVSECOPS_THREAT_ENGINE_RU.md) — действия агента, статусы проверки и ограничения.
