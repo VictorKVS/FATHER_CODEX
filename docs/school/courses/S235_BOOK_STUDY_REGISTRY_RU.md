@@ -1,12 +1,12 @@
-# CyberED S-235 / FATHER Academy — реестр разбора четырёх книг
+# CyberED S-235 / FATHER Academy — реестр шести загруженных источников
 
-**Дата регистрации:** 2026-11-26  
-**Статус:** PDF_METADATA_AND_TOC_INSPECTED / CHAPTER_ANALYSIS_PENDING / LABS_NOT_QUALIFIED  
+**Дата регистрации:** 2026-11-26; дополнительная партия 2026-11-27  
+**Статус:** PDF_AND_EPUB_METADATA_TOC_INSPECTED / CHAPTER_ANALYSIS_PENDING / LABS_NOT_QUALIFIED  
 **Владельцы:** ALINA (источники, фрагменты, версии, граф знаний), FATHER_CODEX (учебные версии и Python), POLYGON (испытания).  
 **Связанный курс:** [CyberED S-235](CYBERED_S235_SECURE_DEVELOPMENT_RU.md).  
 **Нормативный справочник:** [Российские акты и ГОСТы](../../reference/security-regulations.html).
 
-## Полученные файлы — прочитаны титульные страницы и краткие оглавления, полный разбор впереди
+## Полученные файлы — проверены титульные данные и структура; полный разбор впереди
 
 | ID | Книга, данные **из переданного PDF** | Страниц в PDF | Темы, подтверждённые оглавлением | Статус |
 |---|---|---:|---|---|
@@ -14,10 +14,14 @@
 | SEC-BOOK-002 | Justin Richer, Antonio Sanso, **OAuth 2 in Action**, Manning, **2017**, ISBN 9781617293276 | 362 | OAuth actors/grants, clients, protected resources, authorization server, token threats, OIDC | REGISTERED / HISTORICAL_PROTOCOL_EXAMPLES |
 | SEC-BOOK-003 | Neil Madden, **API Security in Action**, Manning, **MEAP Version 10**, copyright 2020 | 929 | secure API development, cookies, tokens, JWT, OAuth/OIDC, identity and capability access, Kubernetes service-to-service, IoT | REGISTERED / MEAP |
 | SEC-BOOK-004 | Aiyan Ma, **Identity Security for Software Development**, BPB, **First Edition 2026**, ISBN 978-93-65892-536 | 353 | history of non-human identities, service accounts, tokens, SSH keys, Kubernetes, DevOps, dynamic secrets and Zero Trust | REGISTERED |
+| SEC-BOOK-005 | Sebastian Aigner, Roman Elizarov, Svetlana Isakova, Dmitry Jemerov, **Kotlin in Action, 2E**, Manning, EPUB (метаданные файла содержат дату 2024-04-30; это **дата записи метаданных**, не доказательство года финального издания) | EPUB | Kotlin language and programming; подробный разбор глав впереди | REGISTERED / EPUB_METADATA_VERIFIED |
+| SEC-BOOK-006 | **Security Engineering**, файл `security-engineering.pdf`: указано имя Ross J. Anderson, но внутри явная строка **“Written by Bookey”** и разделы “Chapter 1 Summary” и “More Book Summary” | 369 | Конспективное вторичное изложение принципов, протоколов, контроля доступа, криптографии, API, распределённых систем и управления защитой | REGISTERED / **THIRD_PARTY_SUMMARY_NOT_ORIGINAL_BOOK** |
+
+**Итог новой партии (27.11.2026):** шесть файлов — четыре PDF из ранее зарегистрированных книг (повторные загрузки, **не четыре новые книги**), один новый EPUB по Kotlin и один PDF, являющийся пересказом Bookey, **не полным текстом Security Engineering Россa Андерсона**. В репозитории хранится только каталог, не сами книги. Дубликаты по содержимому/хешам ещё не проверялись.
 
 **Контроль корректности:** SEC-BOOK-002 — именно издание 2017, **не** OAuth 2 in Action Second Edition; наличие MEAP у книг 001 и 003 означает предварительную версию, примеры и рекомендации нуждаются в сверке. Имя автора книги 004 — **Aiyan Ma**, а не ранее предложенный авторами другого издания состав.
 
-**Авторское право:** владельцем учебных PDF остаётся правообладатель. PDF-файлы **не загружать** в публичный GitHub и не публиковать сканы/существенные главы/переводы. Реестр, собственные объяснения, алгоритмы, оригинальные программы и ссылки на страницы/главы допустимы. Не фиксировать в репозитории приватные пути, токены и секреты.
+**Авторское право:** владельцем учебных PDF остаётся правообладатель. PDF/EPUB-файлы **не загружать** в публичный GitHub и не публиковать сканы/существенные главы/переводы. Реестр, собственные объяснения, алгоритмы, оригинальные программы и ссылки на страницы/главы допустимы. Не фиксировать в репозитории приватные пути, токены и секреты.
 
 ## Протокол разбора каждой главы
 
@@ -31,6 +35,11 @@
 8. **INTEGRATE:** новое знание в FATHER Analytical Core/SecGraph; предельно конкретные ссылки из уроков CyberED в релевантных местах; развитие FATHER UAG и авторизации AI-агентов.
 
 Формат каждого артефакта: `source_id / chapter_id / concept_id / chapter_title / original_claim / verified_claim / official_source / applicability / algorithm / implementation / tests / evidence / teach_back / status`.
+
+## Специализация новых источников
+
+- **SEC-BOOK-005 / Kotlin:** дополнительный языковой трек программирования и разработки клиентов / сервисов. Не путать с учебником DevSecOps или безопасной разработки, которых тема книги сама по себе не заменяет. Практические задания TIMA применять только при возникновении Kotlin/Java-проекта.
+- **SEC-BOOK-006 / Bookey Summary:** использовать как навигационный конспект, **не** как первоисточник цитат, оригинальных алгоритмов или точных страниц Ross Anderson. Для доказательной энциклопедии потребуется оригинальная работа/официальные материалы автора, иначе указывать `SECONDARY_SUMMARY_ONLY`.
 
 ## Очерёдность (не равна приоритету книг)
 
