@@ -100,3 +100,8 @@
 ## Baseline FATHER
 
 Human commits, ADR, component/data/security/qualification contracts, SHA-256 provenance, SBOM/build provenance, evidence и независимые тесты; релизные подписи — только разрешёнными ключами. Оригинальный исходный код ребёнка и его первая версия не заменяются «идеальной» версией без сохранения истории и объяснения.
+
+## AppSec и DevSecOps — CyberED S-235
+
+- [Открыть трек S-235 «Основы безопасной разработки»](../school/courses/CYBERED_S235_SECURE_DEVELOPMENT_RU.md) — модули 0–4: введение и SSDLC, веб-угрозы (две части), защита окружения, безопасная разработка в SDL; уровни школьник → студент → Junior → Master → Senior, Teach-Back и POLYGON.
+- По ссылкам CyberED учитываются только темы опубликованной программы и пользовательский список LMS; закрытые лекции не копируются. Прогресс CyberED не эквивалентен квалификации FATHER.
