@@ -124,3 +124,7 @@ Human commits, ADR, component/data/security/qualification contracts, SHA-256 pro
 - [Тренажёр проверки зависимостей и перехода EXPLORE → BUILD → RELEASE](../school/security-layer.html).
 - [Инженерный контракт S0–S7, Cost Gate, allow/block/review для версионированных зависимостей](../school/SECURITY_SECOND_LAYER_RU.md).
 - Статус: интерактивная демонстрация + политика; реальное CI-принуждение и POLYGON требуют отдельного исполнения и evidence.
+
+## Практическая лаборатория сканеров
+
+- [Сканеры уязвимостей и установка для Windows](../school/vulnerability-scanners.html): Trivy, Grype, OSV-Scanner, Semgrep, отложенный Greenbone; безопасная установка через `tools/security/Install-FatherScanners.ps1`, проверяемые отчёты и связь с S0–S7.
