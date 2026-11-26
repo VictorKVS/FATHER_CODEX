@@ -110,3 +110,7 @@ Human commits, ADR, component/data/security/qualification contracts, SHA-256 pro
 
 - [Справочник российской нормативной базы ИБ](../reference/security-regulations.html) — федеральные законы, постановления, приказы ФСТЭК/ФСБ и ГОСТы, поиск и цепочки применимости.
 - [CyberED S-235](../school/courses/CYBERED_S235_SECURE_DEVELOPMENT_RU.md) — нормативная база указана прямо в темах CIA, аутентификации, авторизации, SSDLC и DevSecOps.
+
+## FATHER Security Wiki
+
+- [SEC-IDENTITY-001: идентификация, аутентификация, авторизация](../reference/wiki/SEC-IDENTITY-001.md) — компактный документ с книжной цитатой, пунктами законодательства, алгоритмом и испытаниями.
