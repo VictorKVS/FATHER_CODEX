@@ -133,3 +133,8 @@ Human commits, ADR, component/data/security/qualification contracts, SHA-256 pro
 
 - [Интерактивная лаборатория: STRIDE, деревья AND/OR, матрица 5×5](../school/tima-threat-lab.html)
 - [Архитектура агента TIMA: DevSecOps, источники, risk_id, JSON-контракты, POLYGON](../architecture/TIMA_DEVSECOPS_THREAT_ENGINE_RU.md)
+
+
+## Пройденные в учебном диалоге темы CyberED
+
+[Единая учебная страница: Waterfall, DevOps/DevSecOps, CI/CD, SSDLC, CVSS, STRIDE и практика TIMA](../school/cybered-completed-lessons.html). Содержит ответы по смыслу, первоисточники и пометку о спорном вопросе воспроизводимости. Это обзор изученного в диалоге, а не подтверждение прохождения LMS.
