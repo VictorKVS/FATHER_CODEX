@@ -114,3 +114,7 @@ Human commits, ADR, component/data/security/qualification contracts, SHA-256 pro
 ## FATHER Security Wiki
 
 - [SEC-IDENTITY-001: идентификация, аутентификация, авторизация](../reference/wiki/SEC-IDENTITY-001.md) — компактный документ с книжной цитатой, пунктами законодательства, алгоритмом и испытаниями.
+
+## Риск-ориентированный подход / Risk Engine
+
+- [SEC-RISK-001 — нормативная база, алгоритм и архитектура автоматического анализа и управления рисками](../reference/wiki/SEC-RISK-001.md). Статус: исследование и проектирование; ни работающий движок, ни проверки POLYGON не заявлены.
