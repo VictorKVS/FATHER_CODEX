@@ -20,6 +20,8 @@
 
 **Практическая страница:** [CVE-2021-44228 Log4Shell — факты, CVSS v3.1, EPSS, KEV, интерактивный анализ риска](../vulnerability-case-study.html) (не является анализом закрытого видео).
 
+**Практика:** [Бесплатные сканеры Trivy, Grype, OSV-Scanner и Semgrep: установка, отчёты и правила допуска](../vulnerability-scanners.html). Установка на ПК — отдельный PowerShell-скрипт, запуск только пользователем.
+
 ## Источники
 
 - [Официальная опубликованная программа CyberED S-235](https://new.cyber-ed.ru/b2c-courses/osnovy-bezopasnoj-razrabotki/)
