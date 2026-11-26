@@ -128,3 +128,8 @@ Human commits, ADR, component/data/security/qualification contracts, SHA-256 pro
 ## Практическая лаборатория сканеров
 
 - [Сканеры уязвимостей и установка для Windows](../school/vulnerability-scanners.html): Trivy, Grype, OSV-Scanner, Semgrep, отложенный Greenbone; безопасная установка через `tools/security/Install-FatherScanners.ps1`, проверяемые отчёты и связь с S0–S7.
+
+## TIMA DevSecOps Threat Engineering
+
+- [Интерактивная лаборатория: STRIDE, деревья AND/OR, матрица 5×5](../school/tima-threat-lab.html)
+- [Архитектура агента TIMA: DevSecOps, источники, risk_id, JSON-контракты, POLYGON](../architecture/TIMA_DEVSECOPS_THREAT_ENGINE_RU.md)
