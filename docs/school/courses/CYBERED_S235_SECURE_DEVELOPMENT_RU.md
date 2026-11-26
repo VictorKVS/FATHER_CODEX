@@ -22,6 +22,8 @@
 
 **Практика:** [Бесплатные сканеры Trivy, Grype, OSV-Scanner и Semgrep: установка, отчёты и правила допуска](../vulnerability-scanners.html). Установка на ПК — отдельный PowerShell-скрипт, запуск только пользователем.
 
+**CyberED M0, урок 4:** [SEC-THREAT-MODELING-001 — моделирование угроз, STRIDE/DFD, требования, риск и POLYGON](../../reference/wiki/SEC-THREAT-MODELING-001.md). [Оригинальное видео CyberED](https://learn.cyber-ed.ru/pluginfile.php/2049/mod_resource/content/3/M0_Ls4_%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%83%D0%B3%D1%80%D0%BE%D0%B7_PASHA_MST.mp4) не было доступно для просмотра, поэтому цитаты преподавателя пока не внесены.
+
 ## Источники
 
 - [Официальная опубликованная программа CyberED S-235](https://new.cyber-ed.ru/b2c-courses/osnovy-bezopasnoj-razrabotki/)
