@@ -171,3 +171,8 @@
 
 - [Интерактивная лаборатория TIMA](../tima-threat-lab.html) — STRIDE, PASTA, LINDDUN, OCTAVE, деревья атак и тренажёр рисков.
 - [Контракт TIMA DevSecOps Threat Engineering](../../architecture/TIMA_DEVSECOPS_THREAT_ENGINE_RU.md) — действия агента, статусы проверки и ограничения.
+
+
+## Пройденные в учебном диалоге темы CyberED
+
+[Единая учебная страница: Waterfall, DevOps/DevSecOps, CI/CD, SSDLC, CVSS, STRIDE и практика TIMA](../cybered-completed-lessons.html). Содержит ответы по смыслу, первоисточники и пометку о спорном вопросе воспроизводимости. Это обзор изученного в диалоге, а не подтверждение прохождения LMS.
