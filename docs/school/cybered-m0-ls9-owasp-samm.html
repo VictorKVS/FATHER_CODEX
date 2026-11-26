@@ -1,0 +1,58 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CyberED M0 Ls9 — OWASP SAMM | FATHER Academy</title>
+<style>:root{color-scheme:dark;--bg:#0b1523;--p:#14273f;--p2:#213a56;--line:#415c75;--text:#f0f6ff;--sub:#b7c8dc;--mint:#89e6cf}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0,#28516c 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.58 system-ui,Segoe UI,sans-serif}main{max-width:1160px;margin:auto;padding:22px 20px 70px}nav{display:flex;gap:15px;flex-wrap:wrap}a{color:#a6d7ff}h1{font-size:clamp(30px,4vw,46px);line-height:1.15;margin:20px 0 7px}h2{font-size:24px;margin:0 0 15px}h3{margin:7px 0}.lead,.small{color:var(--sub)}.small{font-size:13px}.eyebrow{font-size:12px;letter-spacing:.13em;color:var(--mint);font-weight:800}.panel{background:var(--p);border:1px solid var(--line);padding:20px;border-radius:14px;margin:17px 0}.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}.card{background:var(--p2);border:1px solid #54728d;border-radius:10px;padding:12px;min-width:0}.card h3{font-size:16px}.card ul{padding-left:19px;font-size:13px}.card li{margin:8px 0}.card small{color:var(--sub)}table{width:100%;border-collapse:collapse}th,td{border-bottom:1px solid #37526a;padding:10px;text-align:left;vertical-align:top}th{color:var(--sub);font-size:13px}.notice{background:#342f28;border-left:4px solid #efc786;border-radius:8px;padding:13px}.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.flow span{padding:9px 13px;background:#213b55;border:1px solid #5b7791;border-radius:8px}label{display:block;padding:9px 0}input[type=checkbox]{accent-color:#70d8bb;width:19px;height:19px;vertical-align:middle;margin-right:8px}button{background:#234d62;color:#fff;border:1px solid #6d92ad;border-radius:8px;padding:10px 15px;cursor:pointer;font:inherit}button:hover{background:#34657c}button:focus-visible,a:focus-visible{outline:3px solid #efc786;outline-offset:3px}details{background:#1b344d;border:1px solid #4e718e;border-radius:9px;padding:11px;margin:10px 0}summary{cursor:pointer;font-weight:650}code{background:#263e57;border-radius:4px;padding:2px 5px}.result{background:#19374c;border:1px solid #668ca4;border-radius:9px;padding:13px;margin-top:12px}.refs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.refs a{display:block;background:#1e3854;padding:12px;border:1px solid #4e718e;border-radius:9px}@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){.grid,.refs{grid-template-columns:1fr}}</style></head><body><main>
+<nav><a href="index.html">← Академия</a><a href="cybered-completed-lessons.html">Пройденные темы</a><a href="tima-threat-lab.html">TIMA DevSecOps</a><a href="security-layer.html">Security + Cost</a></nav>
+<p class="eyebrow">CYBERED · M0 LS9 · КОНСПЕКТ ПО ПОДТВЕРЖДЁННЫМ КАДРАМ</p><h1>OWASP SAMM — зрелость процессов безопасной разработки</h1>
+<p class="lead">Разбор видеолекции «M0_Ls9_OWASP SAMM_PASHA_MST.mp4», продолжительность <strong>09:43</strong>. Видимые слайды показывают модель из пяти бизнес-функций и пятнадцати практик. Пояснения ниже — авторская учебная интерпретация этих материалов, дополненная публичной моделью OWASP.</p>
+<div class="notice"><strong>Достоверность:</strong> кадры видеозаписи проверены выборочно, аудио преподавателя <strong>не расшифровано</strong>. Временные отметки относятся к проверенным кадрам (не являются точными границами его речи). Не используйте страницу как дословный конспект лектора. Уровни зрелости TIMA по SAMM пока не измерены.</div>
+<section class="panel"><h2>1. Пять функций и 15 практик SAMM</h2><div class="grid">
+<div class="card"><h3>Governance</h3><small>Управление · кадры 02:00–04:00</small><ul><li>Strategy & Metrics</li><li>Policy & Compliance</li><li>Education & Guidance</li></ul></div>
+<div class="card"><h3>Design</h3><small>Проектирование · около 04:00</small><ul><li>Threat Assessment</li><li>Security Requirements</li><li>Security Architecture</li></ul></div>
+<div class="card"><h3>Implementation</h3><small>Реализация · около 05:00–06:00</small><ul><li>Secure Build</li><li>Secure Deployment</li><li>Defect Management</li></ul></div>
+<div class="card"><h3>Verification</h3><small>Проверка · около 07:00</small><ul><li>Architecture Assessment</li><li>Requirements-Driven Testing</li><li>Security Testing</li></ul></div>
+<div class="card"><h3>Operations</h3><small>Эксплуатация · около 08:00–09:00</small><ul><li>Incident Management</li><li>Environment Management</li><li>Operational Management</li></ul></div>
+</div><p class="small">Функции на слайдах подписаны на английском. В структуре модели OWASP SAMM каждая из 15 практик подразделяется на два потока (streams) с критериями зрелости. Использовать официальную версию модели для проведения реального assessment.</p></section>
+<section class="panel"><h2>2. Конспект с временными отметками</h2>
+<table><thead><tr><th>Проверенный кадр</th><th>Видимое содержание</th><th>Что надо усвоить</th></tr></thead><tbody>
+<tr><td>00:10–01:00</td><td>Ведущий рассказывает в кадре; без расшифровки содержание речи неизвестно</td><td>Не приписывать преподавателю непроверенные тезисы</td></tr>
+<tr><td>02:00</td><td>Матрица OWASP SAMM; выделено управление (Governance)</td><td>Без политики, стратегии, метрик и обучения инструменты не образуют зрелую программу безопасности</td></tr>
+<tr><td>03:00</td><td>Выделен Policy & Compliance — политики и соблюдение требований</td><td>Отделять нормативную применимость от внутренних рекомендаций и фактического исполнения</td></tr>
+<tr><td>04:00</td><td>Выделены Security Requirements и текст о процессе установления требований</td><td>Угрозы и ценность активов превращаются в проверяемые требования</td></tr>
+<tr><td>05:00</td><td>Все три практики Design</td><td>Threat Assessment, Security Requirements и Security Architecture — связанные, но отдельные виды деятельности</td></tr>
+<tr><td>06:00</td><td>Выделены практики Implementation</td><td>Контролировать сборку, поставку и устранение дефектов</td></tr>
+<tr><td>07:00</td><td>Выделена Architecture Assessment</td><td>Архитектуру нужно проверять независимо от того, проходит ли код unit tests</td></tr>
+<tr><td>08:00</td><td>Выделено Incident Management</td><td>Реагирование включает обнаружение, оповещение, восстановление и дальнейшее улучшение</td></tr>
+<tr><td>09:00</td><td>Практики Operations</td><td>Нужны управление средой и эксплуатационными рисками</td></tr>
+</tbody></table></section>
+<section class="panel"><h2>3. Как использовать SAMM в TIMA</h2><div class="flow"><span>Сбор evidence</span>→<span>Проверка практики SAMM</span>→<span>Пробелы</span>→<span>План повышения зрелости</span>→<span>POLYGON verification</span></div>
+<table><thead><tr><th>Функция</th><th>Работа TIMA</th><th>Доказательства</th></tr></thead><tbody>
+<tr><td>Governance</td><td>Помочь со структурой политик и реестром обучения; отслеживать метрики</td><td>Утверждённые политики, журналы обучения, владелец процесса</td></tr>
+<tr><td>Design</td><td>DFD, STRIDE, деревья атак, связи с risk_id и security requirements</td><td>Версионированная модель, источники, утверждённые требования</td></tr>
+<tr><td>Implementation</td><td>GitHub Actions, SAST/SCA/SBOM, секреты, reproducible builds</td><td>CI-логи, конфигурация, подписи и хеши, отчёты сканеров</td></tr>
+<tr><td>Verification</td><td>Проверки архитектуры и тестов; передача независимому POLYGON</td><td>Фактические негативные тесты и отчёты о регрессиях</td></tr>
+<tr><td>Operations</td><td>Наблюдаемость, управление уязвимостями и изменениями среды</td><td>События, планы реагирования, протоколы восстановления</td></tr>
+</tbody></table>
+<p><b>Главное:</b> TIMA может собирать evidence и готовить оценку, но не может присваивать компании уровень зрелости без проверки фактического выполнения практик по официальной методике. Высокий CVSS — свойство CVE, высокий уровень SAMM — зрелость процесса; это разные измерения.</p></section>
+<section class="panel"><h2>4. Учебная самооценка — не официальный SAMM assessment</h2><p class="small">Отметь демонстрационные условия. Итог — перечень тем для следующей проверки, <strong>не</strong> присвоение уровней зрелости SAMM.</p>
+<label><input type="checkbox" data-audit="Governance">Есть утверждённые политики, метрики и записи об обучении</label>
+<label><input type="checkbox" data-audit="Design">Для значимых функций существуют требования и проверенная модель угроз</label>
+<label><input type="checkbox" data-audit="Implementation">Сборка и SAST/SCA/SBOM действительно запускаются и сохраняют журналы</label>
+<label><input type="checkbox" data-audit="Verification">Контроли подтверждены тестами, включая негативные сценарии</label>
+<label><input type="checkbox" data-audit="Operations">Есть работающие мониторинг, реагирование и обновление защитных мер</label>
+<button id="evaluate">Показать пробелы</button><div class="result" id="result" role="status" aria-live="polite">Это учебный список, оценки организации пока не проводилось.</div>
+</section>
+<section class="panel"><h2>5. Самопроверка по лекции и теме</h2>
+<details><summary>Что измеряет OWASP SAMM?</summary><p>Зрелость процессов обеспечения безопасности разработки и эксплуатации, а не CVSS или качество отдельно взятого сканера.</p></details>
+<details><summary>Что такое бизнес-функция / домен SAMM?</summary><p>Крупный структурный блок модели, объединяющий три связанные практики. Governance — стратегия, политики, обучение.</p></details>
+<details><summary>Почему наличие Trivy ещё не доказывает зрелость?</summary><p>Нужны воспроизводимое выполнение сканирования, интерпретация находок, исправления, подтверждённые evidence, ответственность и регулярное улучшение процесса.</p></details>
+<details><summary>Как отличить SAMM от модели угроз и матрицы рисков?</summary><p>SAMM измеряет зрелость процессов; модель угроз рассматривает сценарии опасных событий; реестр рисков IDEA+ помогает принимать решения об их обработке.</p></details></section>
+<section class="panel"><h2>6. Первичные источники и соседние лаборатории</h2><div class="refs">
+<a href="https://owaspsamm.org/model/">OWASP SAMM — официальная модель</a>
+<a href="https://owaspsamm.org/">OWASP SAMM — сайт проекта</a>
+<a href="https://github.com/owaspsamm/core">OWASP SAMM Core — модель и материалы</a>
+<a href="https://csrc.nist.gov/pubs/sp/800/218/final">NIST SP 800-218 — SSDF</a>
+<a href="tima-threat-lab.html">TIMA — моделирование угроз и рисков</a>
+<a href="vulnerability-scanners.html">TIMA — сканеры уязвимостей</a>
+<a href="cybered-completed-lessons.html">Реестр пройденных тем CyberED</a>
+<a href="../reference/security-regulations.html">Российский нормативный справочник</a>
+</div></section><footer class="small">FATHER Academy · 27.11.2026 · основано на проверенных отдельных кадрах загруженного видео и авторских пояснениях; аудиотранскрипт и проверка фактического исполнения SAMM отсутствуют. Полное видео в публичный GitHub не загружается.</footer></main>
+<script>document.getElementById('evaluate').addEventListener('click',()=>{const checks=[...document.querySelectorAll('[data-audit]')];const missing=checks.filter(x=>!x.checked).map(x=>x.dataset.audit);document.getElementById('result').textContent=missing.length?'Не подтверждено в учебной модели: '+missing.join(', ')+'. Нужна проверка evidence по каждому разделу.':'Все пять учебных условий отмечены. Это всё ещё не официальная оценка зрелости SAMM: требуются проверенные практики и evidence.'});</script></body></html>
