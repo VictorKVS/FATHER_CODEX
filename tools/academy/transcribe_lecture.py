@@ -59,11 +59,11 @@ def main():
     metadata = {"source": src.name, "status": "ASR_DRAFT_REQUIRES_LISTENING_VERIFICATION",
                 "model": args.model, "device": args.device, "detected_language": info.language,
                 "audio_duration_seconds": duration, "segments": entries}
-    (base.with_suffix(".json")).write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
-    with (base.with_suffix(".srt")).open("w", encoding="utf-8") as output:
+    (Path(str(base) + ".json")).write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
+    with (Path(str(base) + ".srt")).open("w", encoding="utf-8") as output:
         for n, e in enumerate(entries, start=1):
             output.write(f"{n}\n{stamp(e['start'], ',')} --> {stamp(e['end'], ',')}\n{e['text']}\n\n")
-    with (base.with_suffix(".txt")).open("w", encoding="utf-8") as output:
+    with (Path(str(base) + ".txt")).open("w", encoding="utf-8") as output:
         output.write("АВТОМАТИЧЕСКАЯ ЧЕРНОВАЯ ТРАНСКРИПЦИЯ. НЕ СЧИТАТЬ ДОСЛОВНОЙ БЕЗ СВЕРКИ.\n\n")
         for e in entries:
             output.write(f"[{stamp(e['start'], '.')}–{stamp(e['end'], '.')}] {e['text']}\n")
