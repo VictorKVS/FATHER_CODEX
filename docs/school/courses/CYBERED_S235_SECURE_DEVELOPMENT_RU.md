@@ -228,3 +228,11 @@
 - [Урок №6 «CI/CD» — видео, разбор кадров и собеседование](../cybered-m0-ls6-ci-cd.html), [авторская лекция FATHER](../lectures/FATHER_M0_LS6_CI_CD_20MIN_RU.md). Источник 05:28.8, аудио не транскрибировано.
 - [Урок №7 «Основные практики SSDLC» — видео, разбор кадров и собеседование](../cybered-m0-ls7-ssdlc.html), [авторская лекция FATHER](../lectures/FATHER_M0_LS7_SSDLC_20MIN_RU.md). Источник 08:33.0, аудио не транскрибировано.
 - Статус: VERIFIED_FRAME_SAMPLES / ORIGINAL_SCRIPTS / BROWSER_NOT_QUALIFIED / POLYGON_NOT_QUALIFIED.
+
+
+### CyberED M0 — уроки №8, №9, №10: отдельные страницы и свои авторские лекции
+
+- [№8: Принципы дизайна безопасного ПО](../cybered-m0-ls8-secure-design.html) — исходный MP4 12:36.5, [оригинальная лекция FATHER](../lectures/FATHER_M0_LS8_SECURE_DESIGN_20MIN_RU.md).
+- [№9: OWASP SAMM](../cybered-m0-ls9-owasp-samm.html) — исходный MP4 09:43.2, существующая страница расширена, [оригинальная лекция FATHER](../lectures/FATHER_M0_LS9_OWASP_SAMM_20MIN_RU.md).
+- [№10: QA-тестирование](../cybered-m0-ls10-qa-testing.html) — исходный MP4 05:56.5, [оригинальная лекция FATHER](../lectures/FATHER_M0_LS10_QA_TESTING_20MIN_RU.md).
+- Выборочные видеокадры проверены. Аудиотранскрипция **не выполнена**; собственные сценарии FATHER отдельно от исходника. Размещение MP4 только локально или с надлежащими правами.
