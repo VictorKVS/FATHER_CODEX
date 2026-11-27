@@ -1,0 +1,87 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CyberED M0 Ls2 — Риск-ориентированный подход · FATHER Academy</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1525;--panel:#162a43;--line:#44627e;--text:#eef6ff;--muted:#b6c8dc;--accent:#a9e3e0;--gold:#f3ce91}*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 80% -15%,#265274 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,sans-serif}
+main{max-width:1150px;margin:auto;padding:24px 20px 75px}a{color:#9ad6ff}nav{display:flex;flex-wrap:wrap;gap:15px;font-size:14px}h1{font-size:clamp(30px,4.5vw,45px);line-height:1.16;margin:21px 0 8px}h2{margin:0 0 13px;font-size:24px}h3{margin:11px 0}
+.eyebrow{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.13em}.lead,.small{color:var(--muted)}.small{font-size:13px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;margin:18px 0}
+.notice{border-left:4px solid var(--gold);background:#382e2b;border-radius:8px;padding:13px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.tile{background:#1d3d57;border:1px solid #507c9b;border-radius:10px;padding:12px;min-height:115px}.tile b{color:#aef4df;display:block}
+video{background:#050910;width:100%;max-height:480px;border:1px solid #577a97;border-radius:10px}
+button{font:inherit;background:#244e69;border:1px solid #638eaa;color:white;border-radius:8px;padding:9px 12px;cursor:pointer}button:hover{background:#326a80}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:3px}input{font:inherit;max-width:245px}label{display:block;margin:10px 0}.time{display:flex;flex-wrap:wrap;gap:9px}
+.script{white-space:pre-wrap;max-height:230px;overflow:auto;border:1px solid #4c6b89;border-radius:10px;background:#0b2238;padding:12px;font-size:14px}.unit{border-top:1px solid #49647b;padding:13px 0}
+table{width:100%;border-collapse:collapse}th,td{padding:9px;text-align:left;vertical-align:top;border-bottom:1px solid #43617b}th{color:var(--muted);font-size:13px}code{background:#29435b;padding:2px 5px;border-radius:5px}details{border:1px solid #4d7291;background:#1a344e;padding:11px;border-radius:9px;margin:10px 0}summary{cursor:pointer;font-weight:bold}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:7px}.flow span{border-radius:9px;padding:9px 12px;border:1px solid #507b9b;background:#1a3c57}.refs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.refs a{padding:12px;background:#1a3852;border:1px solid #466884;border-radius:10px}
+@media(max-width:750px){.grid{grid-template-columns:repeat(2,1fr)}.refs{grid-template-columns:1fr}}@media(max-width:460px){.grid{grid-template-columns:1fr}}
+</style></head><body><main>
+<nav><a href="index.html">← Академия</a><a href="cybered-m0-ls1-cybersecurity-basics.html">Урок 1</a><a href="tima-threat-lab.html">TIMA Threat Lab</a><a href="../reference/wiki/SEC-RISK-001.md">Wiki: управление рисками</a></nav>
+<p class="eyebrow">CYBERED S-235 / M0 LS2 / ИНЖЕНЕРНЫЙ УЧЕБНИК</p>
+<h1>Риск-ориентированный подход к безопасности</h1>
+<p class="lead">Оригинальная запись: <b>M0_Ls2_Рискориентированный подход_PASHA_MST.mp4</b>, 11:09.6. Здесь отдельно представлены подтверждённые кадры лекции, углублённый учебный разбор и <a href="lectures/FATHER_M0_LS2_RISK_ORIENTED_20MIN_RU.md">авторская лекция FATHER примерно на 20 минут</a>.</p>
+<div class="notice"><strong>Контроль источников:</strong> фактически проверены отдельные кадры MP4. Аудио преподавателя пока <b>не расшифровано</b>. Ни одна авторская интерпретация FATHER ниже не считается дословной цитатой лектора. Метки — точки просмотра, а не выверенные границы фрагментов речи.</div>
+<section class="panel"><h2>1. Видеоурок + место для точной транскрипции</h2><p class="small">Исходный MP4 не размещён в публичном GitHub. Нажми «Выбрать файл», чтобы открыть видео локально, без отправки на сервер. Если имеется SRT/VTT/TXT, загрузи его отдельно.</p>
+<label>Лекция MP4: <input type="file" id="local-video" accept="video/*"></label><label>Транскрипт: <input type="file" id="local-txt" accept=".srt,.vtt,.txt"></label>
+<video id="lecture-video" controls playsinline preload="metadata" aria-label="Видеолекция по риск-ориентированному подходу"></video>
+<p id="media-status" class="small" role="status">Локальное видео ещё не выбрано.</p>
+<h3>Нажми на интересующий слайд</h3><div class="time">
+<button type="button" data-time="60">01:00 Compliance</button>
+<button type="button" data-time="120">02:00 R=P×I</button>
+<button type="button" data-time="180">03:00 Risk Management</button>
+<button type="button" data-time="300">05:00 Источники угроз</button>
+<button type="button" data-time="420">07:00 Численный риск</button>
+<button type="button" data-time="480">08:00 Обработка</button>
+<button type="button" data-time="600">10:00 Снижение</button></div>
+<h3>Дословная речь преподавателя</h3><div id="transcript" class="script">Подтверждённый аудиотранскрипт отсутствует. Загрузка .srt/.vtt/.txt здесь отображает пользовательский текст; его точность должна быть отдельно сверена с записью.</div>
+<p class="small">Текст распознавания можно получить локальным инструментом <a href="https://github.com/VictorKVS/FATHER_CODEX/blob/main/tools/academy/transcribe_lecture.py">transcribe_lecture.py</a>, далее исправить по прослушиванию.</p></section>
+<section class="panel"><h2>2. Разбор исходной лекции — наблюдаемое содержание</h2>
+<table><thead><tr><th>Точка кадра</th><th>Что видно на слайде</th><th>Что нужно усилить при изучении</th></tr></thead><tbody>
+<tr><td>01:00</td><td>Compliance-подход: основным драйвером безопасности являются требования регуляторов</td><td>Compliance и управление риском дополняют друг друга; решение о риске не отменяет обязательных норм</td></tr>
+<tr><td>02:00</td><td><b>R = P × I</b>; риск как сочетание вероятности и влияния</td><td>Не выдавать индексы порядковых шкал за статистические вероятности или деньги</td></tr>
+<tr><td>03:00–04:00</td><td>Схема риск-менеджмента: оценка, реагирование, мониторинг; входные критерии, допущения и информация</td><td>Уточнить контекст, идентификацию, анализ, оценивание, контроль неопределённости</td></tr>
+<tr><td>05:00–07:00</td><td>Элементы анализа: источники угроз → угрозы → условия реализации → вероятность → влияние → численный риск</td><td>Связать каждую оценку с активом, последствиями, сценарием, доказательствами и источником</td></tr>
+<tr><td>08:00–10:00</td><td>Варианты обработки: уклонение, передача, снижение и принятие риска</td><td>Сопоставить со стоимостью мер, остаточным риском и решением человека</td></tr>
+<tr><td>10:50</td><td>Преподаватель в кадре</td><td>Содержание финальных реплик без транскрипции неизвестно</td></tr>
+</tbody></table>
+</section>
+<section class="panel"><h2>3. Четыре стратегии обработки риска</h2>
+<div class="grid">
+<div class="tile"><b>Уклонение · Avoid</b>Не выполнять действие или отказаться от функциональности, создающей неприемлемый риск.</div>
+<div class="tile"><b>Снижение · Reduce</b>Уменьшить возможность реализации или последствия за счёт проверенных защитных мер.</div>
+<div class="tile"><b>Передача · Share/Transfer</b>Разделить часть финансовых последствий, например по договору; юридические обязанности не исчезают автоматически.</div>
+<div class="tile"><b>Принятие · Accept</b>Согласованное решение уполномоченного человека по остаточному риску, в рамках утверждённых критериев.</div></div>
+</section>
+<section class="panel"><h2>4. Связь методов с FATHER / TIMA</h2><div class="flow"><span>IDEA+ S0</span>→<span>Активы и последствия</span>→<span>S2 угроза и сценарий</span>→<span>Risk Register</span>→<span>S3/Cost</span>→<span>TIMA</span>→<span>POLYGON</span>→<span>S7 мониторинг</span></div>
+<p>Реестр рисков существует один с начала IDEA+. TIMA собирает факты по SBOM, SAST/SCA, CI/CD, проверке среды и журнальным данным. ALINA связывает их с первоисточниками. Security Architect предлагает меры. POLYGON независимо подтверждает работу контролей. Принятие существенного остаточного риска не делегируется LLM.</p>
+<div class="notice"><b>Профессиональная тонкость:</b> модель угроз по методике ФСТЭК 2021 (если применима) не заменяется условной корпоративной матрицей 5×5. CVSS severity также не является оценкой общего бизнес-риска.</div>
+</section>
+<section class="panel"><h2>5. Интервью: ответы, которые нужно выучить</h2>
+<details open><summary>Что такое риск-ориентированный подход?</summary><p>Проектирование и управление защитой исходя из контекстных сценариев угроз, потенциальных последствий и возможности их реализации, с учётом существующих контролей, ограничений и нормативных обязательств. Итог — обоснованные приоритеты, меры обработки, владельцы риска и мониторинг.</p></details>
+<details><summary>В чём отличие оценки угроз от оценки рисков?</summary><p>Модель угроз описывает возможные негативные события и способы их реализации в конкретной системе. Оценка риска рассматривает последствия, возможность реализации и критерии принятия решения. Оба процесса связаны, но не идентичны.</p></details>
+<details><summary>Что означает R = P × I?</summary><p>Упрощённый способ показать вклад возможности события и последствий. Если P и I — качественные порядковые оценки, результат является условным индексом, а не точной вероятностью или стоимостью ущерба.</p></details>
+<details><summary>Чем CVSS отличается от риска?</summary><p>CVSS классифицирует техническую тяжесть известной уязвимости по её параметрам. Организационный риск требует учесть конкретный актив, экспозицию, достижимость, защитные меры, последствия и неопределённость.</p></details>
+<details><summary>Какие четыре стратегии обработки риска?</summary><p>Избежать, снизить, разделить/передать, принять. Выбор фиксируется в плане с владельцем, доказательствами и мониторингом. Принятие не отменяет требований закона.</p></details>
+<details><summary>Что такое остаточный риск?</summary><p>Риск, остающийся после предпринятых защитных мер. Его уровень и приемлемость должны быть обоснованы и утверждены уполномоченным лицом.</p></details>
+<details><summary>Почему недостаточно одной матрицы 5×5?</summary><p>Без нормированных критериев, доказательств и анализа неопределённости цветная таблица даёт ложную уверенность. Она также не заменяет обязательные процедуры оценки актуальности угроз.</p></details>
+<details><summary>Что должен сделать TIMA при недоступной базе Trivy?</summary><p>Зафиксировать BLOCKED или REVIEW_REQUIRED, сохранить ошибку, не выдавать отсутствие находок за доказательство безопасности и инициировать повторную проверку при актуальной базе.</p></details>
+</section>
+<section class="panel"><h2>6. Авторская лекция FATHER на 20 минут</h2><p>Отдельно подготовлен связный оригинальный сценарий с примерами из медицинской ИС, AI-агентов, безопасного программирования и реестра рисков IDEA+. Его можно читать вслух, использовать для записи новой лекции и подготовки к собеседованию.</p>
+<p><a href="lectures/FATHER_M0_LS2_RISK_ORIENTED_20MIN_RU.md"><b>Читать полный текст авторской лекции № 2 (примерно 20 минут)</b></a></p>
+<p class="small">Авторский сценарий не является транскрипцией CyberED и не воспроизводит речь лектора.</p>
+</section>
+<section class="panel"><h2>7. Первоисточники и соседние уроки</h2><div class="refs">
+<a href="https://www.iso.org/standard/31000">ISO 31000 — принципы, рамка и процесс управления рисками</a>
+<a href="https://csrc.nist.gov/pubs/sp/800/30/r1/final">NIST SP 800-30 Rev.1 — оценка рисков</a>
+<a href="https://www.consultant.ru/document/cons_doc_LAW_378330/">ФСТЭК 05.02.2021 — методика оценки угроз (справочная публикация)</a>
+<a href="https://bdu.fstec.ru/">БДУ ФСТЭК — каталог угроз</a>
+<a href="https://www.first.org/cvss/">FIRST CVSS — оценка серьёзности уязвимостей</a>
+<a href="tima-threat-lab.html">TIMA — деревья атак и учебная матрица рисков</a>
+<a href="../reference/wiki/SEC-RISK-001.md">FATHER Wiki — риск-ориентированный подход</a>
+<a href="../architecture/ADR-IDEA-RISK-REGISTER-RU.md">ADR — единый реестр IDEA+</a>
+</div></section>
+<p class="small">Статус: SOURCE_FRAME_SAMPLES_INSPECTED · AUDIO_NOT_TRANSCRIBED · AUTHOR_LECTURE_CREATED · EDUCATIONAL_PAGE_PUBLISHED · POLYGON_NOT_QUALIFIED. Дата: 27.11.2026.</p>
+</main><script>
+(()=>{const v=document.getElementById('lecture-video'),s=document.getElementById('media-status'),out=document.getElementById('transcript');let src=null;
+document.getElementById('local-video').addEventListener('change',e=>{const f=e.target.files&&e.target.files[0];if(!f)return;if(src)URL.revokeObjectURL(src);src=URL.createObjectURL(f);v.src=src;s.textContent='Локально открыт файл: '+f.name});
+document.querySelectorAll('[data-time]').forEach(b=>b.addEventListener('click',()=>{if(!v.src){s.textContent='Сначала выберите видео';return}v.currentTime=Number(b.dataset.time);v.play().catch(()=>{})}));
+document.getElementById('local-txt').addEventListener('change',async e=>{const f=e.target.files&&e.target.files[0];if(!f)return;out.textContent=await f.text();s.textContent='Импортирован транскрипт '+f.name+'. Сверьте текст с аудио.'});
+})();</script></body></html>
