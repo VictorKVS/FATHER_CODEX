@@ -40,3 +40,9 @@
 
 - [Урок 6 — CI/CD](../cybered-m0-ls6-ci-cd.html) / [авторская лекция](FATHER_M0_LS6_CI_CD_20MIN_RU.md)
 - [Урок 7 — SSDLC](../cybered-m0-ls7-ssdlc.html) / [авторская лекция](FATHER_M0_LS7_SSDLC_20MIN_RU.md)
+
+- [Урок 8 — Secure Design](../cybered-m0-ls8-secure-design.html) / [собственная лекция](FATHER_M0_LS8_SECURE_DESIGN_20MIN_RU.md)
+- [Урок 9 — OWASP SAMM](../cybered-m0-ls9-owasp-samm.html) / [собственная лекция](FATHER_M0_LS9_OWASP_SAMM_20MIN_RU.md)
+- [Урок 10 — QA Testing](../cybered-m0-ls10-qa-testing.html) / [собственная лекция](FATHER_M0_LS10_QA_TESTING_20MIN_RU.md)
+
+**Правило:** одно исходное видео — одна страница с собственными таймкодами, источниками, конспектом, ссылкой на полную авторскую версию и проверочными заданиями. Повторная загрузка того же урока обновляет исходную страницу, не создаёт дубликат.
