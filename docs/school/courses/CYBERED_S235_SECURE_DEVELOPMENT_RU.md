@@ -206,3 +206,11 @@
 - [Авторская расширенная лекция FATHER на ~20 минут](../lectures/FATHER_M0_LS2_RISK_ORIENTED_20MIN_RU.md) — оригинальное изложение, вопросы для собеседования, обоснование оценок и управление рисками.
 - [Авторская лекция FATHER №1](../lectures/FATHER_M0_LS1_AUTHOR_20MIN_RU.md) — полный сценарий по основам кибербезопасности.
 - Статус: SOURCE_FRAMES_CHECKED / AUTHOR_SCRIPT_CREATED / AUDIO_NOT_TRANSCRIBED / POLYGON_NOT_QUALIFIED.
+
+
+### CyberED M0 Ls3 и Ls4 — расширенные занятия FATHER
+
+- [Урок 3: CVSS — исходные кадры, локальный MP4, ссылка на оригинальную лекцию FATHER на ~20 минут](../cybered-m0-ls3-cvss.html). Исходный ролик 14:18.7, аудио не транскрибировано.
+- [Урок 4: STRIDE и деревья атак — кадры, локальный MP4, оригинальная лекция FATHER на ~20 минут](../cybered-m0-ls4-threat-modeling.html). Исходный ролик 08:07.4, аудио не транскрибировано.
+- [Авторский текст №3](../lectures/FATHER_M0_LS3_CVSS_20MIN_RU.md) и [авторский текст №4](../lectures/FATHER_M0_LS4_THREAT_MODELING_20MIN_RU.md).
+- Статус: FRAME_SAMPLES_CHECKED / AUTHOR_SCRIPTS_CREATED / UI_NOT_QUALIFIED / POLYGON_NOT_QUALIFIED.
