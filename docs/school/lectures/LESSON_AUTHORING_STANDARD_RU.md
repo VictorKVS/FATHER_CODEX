@@ -33,3 +33,5 @@
 ## Первые реализации
 - [Урок 1](../cybered-m0-ls1-cybersecurity-basics.html) / [авторский сценарий](FATHER_M0_LS1_AUTHOR_20MIN_RU.md)
 - [Урок 2](../cybered-m0-ls2-risk-based-security.html) / [авторский сценарий](FATHER_M0_LS2_RISK_ORIENTED_20MIN_RU.md)
+- [Урок 3](../cybered-m0-ls3-cvss.html) / [авторский сценарий](FATHER_M0_LS3_CVSS_20MIN_RU.md)
+- [Урок 4](../cybered-m0-ls4-threat-modeling.html) / [авторский сценарий](FATHER_M0_LS4_THREAT_MODELING_20MIN_RU.md)
