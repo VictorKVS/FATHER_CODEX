@@ -37,3 +37,6 @@
 - [Урок 4](../cybered-m0-ls4-threat-modeling.html) / [авторский сценарий](FATHER_M0_LS4_THREAT_MODELING_20MIN_RU.md)
 
 - [Урок 5: Методологии разработки, DevOps и DevSecOps](../cybered-m0-ls5-devops-devsecops.html) / [авторский сценарий на 20 минут](FATHER_M0_LS5_DEVOPS_DEVSECOPS_20MIN_RU.md).
+
+- [Урок 6 — CI/CD](../cybered-m0-ls6-ci-cd.html) / [авторская лекция](FATHER_M0_LS6_CI_CD_20MIN_RU.md)
+- [Урок 7 — SSDLC](../cybered-m0-ls7-ssdlc.html) / [авторская лекция](FATHER_M0_LS7_SSDLC_20MIN_RU.md)
