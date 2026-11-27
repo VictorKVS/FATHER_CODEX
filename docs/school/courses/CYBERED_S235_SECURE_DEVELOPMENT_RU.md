@@ -236,3 +236,11 @@
 - [№9: OWASP SAMM](../cybered-m0-ls9-owasp-samm.html) — исходный MP4 09:43.2, существующая страница расширена, [оригинальная лекция FATHER](../lectures/FATHER_M0_LS9_OWASP_SAMM_20MIN_RU.md).
 - [№10: QA-тестирование](../cybered-m0-ls10-qa-testing.html) — исходный MP4 05:56.5, [оригинальная лекция FATHER](../lectures/FATHER_M0_LS10_QA_TESTING_20MIN_RU.md).
 - Выборочные видеокадры проверены. Аудиотранскрипция **не выполнена**; собственные сценарии FATHER отдельно от исходника. Размещение MP4 только локально или с надлежащими правами.
+
+
+### CyberED M0 Ls11 — статический анализ, SAST/SCA/конфигурации
+
+- [Страница урока №11: исходное видео, таймкоды, подробный разбор и вопросы](../cybered-m0-ls11-sast-sca-config.html)
+- [Авторская лекция FATHER на ~20 минут](../lectures/FATHER_M0_LS11_SAST_SCA_CONFIG_20MIN_RU.md)
+- Оригинальный MP4: 13:34.1; выборочно проверенные кадры, аудиотранскрипт не получен; публичное видео не размещено.
+- Состояния: FRAMES_VERIFIED / AUTHOR_SCRIPT_CREATED / UI_NOT_QUALIFIED / POLYGON_NOT_QUALIFIED.
