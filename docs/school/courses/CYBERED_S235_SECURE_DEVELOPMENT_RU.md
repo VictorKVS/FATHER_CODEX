@@ -214,3 +214,10 @@
 - [Урок 4: STRIDE и деревья атак — кадры, локальный MP4, оригинальная лекция FATHER на ~20 минут](../cybered-m0-ls4-threat-modeling.html). Исходный ролик 08:07.4, аудио не транскрибировано.
 - [Авторский текст №3](../lectures/FATHER_M0_LS3_CVSS_20MIN_RU.md) и [авторский текст №4](../lectures/FATHER_M0_LS4_THREAT_MODELING_20MIN_RU.md).
 - Статус: FRAME_SAMPLES_CHECKED / AUTHOR_SCRIPTS_CREATED / UI_NOT_QUALIFIED / POLYGON_NOT_QUALIFIED.
+
+
+### CyberED M0 Ls5 — Методологии разработки, DevOps и DevSecOps
+
+- [Учебный сайт: обзор кадров, видео, теория, экзаменационные вопросы](../cybered-m0-ls5-devops-devsecops.html).
+- [Полная авторская лекция FATHER на ~20 минут](../lectures/FATHER_M0_LS5_DEVOPS_DEVSECOPS_20MIN_RU.md).
+- Видеозапись 13:48; выборочные кадры Waterfall / Agile / Scrum / DevOps / DevSecOps проверены. **Аудио не транскрибировано**, авторский сценарий не является дословной речью преподавателя.
