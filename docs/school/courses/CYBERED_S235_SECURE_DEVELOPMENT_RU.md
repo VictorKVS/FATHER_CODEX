@@ -221,3 +221,10 @@
 - [Учебный сайт: обзор кадров, видео, теория, экзаменационные вопросы](../cybered-m0-ls5-devops-devsecops.html).
 - [Полная авторская лекция FATHER на ~20 минут](../lectures/FATHER_M0_LS5_DEVOPS_DEVSECOPS_20MIN_RU.md).
 - Видеозапись 13:48; выборочные кадры Waterfall / Agile / Scrum / DevOps / DevSecOps проверены. **Аудио не транскрибировано**, авторский сценарий не является дословной речью преподавателя.
+
+
+### CyberED M0 Ls6 и Ls7 — новые занятия
+
+- [Урок №6 «CI/CD» — видео, разбор кадров и собеседование](../cybered-m0-ls6-ci-cd.html), [авторская лекция FATHER](../lectures/FATHER_M0_LS6_CI_CD_20MIN_RU.md). Источник 05:28.8, аудио не транскрибировано.
+- [Урок №7 «Основные практики SSDLC» — видео, разбор кадров и собеседование](../cybered-m0-ls7-ssdlc.html), [авторская лекция FATHER](../lectures/FATHER_M0_LS7_SSDLC_20MIN_RU.md). Источник 08:33.0, аудио не транскрибировано.
+- Статус: VERIFIED_FRAME_SAMPLES / ORIGINAL_SCRIPTS / BROWSER_NOT_QUALIFIED / POLYGON_NOT_QUALIFIED.
