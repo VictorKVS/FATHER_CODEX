@@ -33,3 +33,16 @@
 
 ## Права и происхождение
 В репозитории размещаются наши авторские выжимки, библиография и ссылки. Загруженные владельцем электронные экземпляры не републикуются, не встраиваются целиком в Git и не используются как основание для заявления о правах на исходный текст.
+
+## Книги для расширения библиотеки (не предоставлены, не изучены по полному тексту)
+Предлагаемый **список чтения**, проверено только существование книги и издательское описание; не приписывать им конкретные алгоритмы до изучения разделов:
+
+| Приоритет | Издание | Какая компетенция нужна | Официальный/каталожный источник |
+|---|---|---|---|
+| P0 | Maurício Aniche — *Effective Software Testing* (2022) | проектирование систематических unit/integration/system test suites и testability | https://www.manning.com/books/effective-software-testing |
+| P0 | Adam Shostack — *Threat Modeling: Designing for Security* | threat modeling, систематизация атак и проверяемых защитных свойств | https://www.wiley.com/en-us/threat-modeling-designing-for-security-p-9781118809990 |
+| P0 | Neil Madden — *API Security in Action* (2020) | аутентификация, авторизация, безопасная конструкция корпоративных API | https://www.manning.com/books/api-security-in-action |
+| P1 | Gerard Meszaros — *xUnit Test Patterns* | повторно используемые паттерны и устранение «запахов» тестового кода | https://www.oreilly.com/library/view/xunit-test-patterns/9780131495050/ |
+| P1 | Boris Beizer — *Software Testing Techniques*, 2nd ed. | техника проектирования тестов и анализ покрытия / тестопригодности | https://www.wileyindia.com/software-testing-techniques.html |
+
+**Нельзя** заявлять, что все перечисленные книги уже есть у владельца, или копировать из них тексты без разрешения.
