@@ -1,0 +1,46 @@
+{
+  "case_id":"SADEQ_API_001",
+  "schema_version":"1.0.0",
+  "status":"DESIGN",
+  "system":"SADEQ P0 B01 API + B02 Store + B05 UAG",
+  "objective":"Доказать запрет межорганизационного доступа к заявке при подмене tenant в URL, теле и демонстрационном заголовке; отдельно удостоверить отсутствие недозволенных побочных эффектов.",
+  "requirement_ids":["FR-NEW-02","FR-NEW-09"],
+  "contract_ids":["FLOW-01","FATHER-CSSC-SI-01","FATHER-CSSC-SI-02","FATHER-CSSC-SI-03"],
+  "threat_ids":["OWASP-API1-2023","OWASP-API2-2023"],
+  "source_refs":[
+    {"source_id":"PRJ-SA-PMI002","locator":"§§1–10","application_note":"Источник постановки, маршрутов, исходного состояния и наблюдаемых последствий."},
+    {"source_id":"PRJ-SA-TP005","locator":"SI-01, SI-02, SI-03; C03, C05, C06","application_note":"Собственные обязательные инварианты авторизации и неявного доверия запретить."},
+    {"source_id":"STD-59795","locator":"§5.13.3–5.13.4","application_note":"Обосновывает включение конкретных проверок и методик в программу испытаний."},
+    {"source_id":"BOOK-AGSEC","locator":"Ch. 6 §6.1; Ch. 7 §7.9","application_note":"Теоретический контекст делегированных полномочий агента и матрицы capabilities; не нормативное основание HTTP-статуса."}
+  ],
+  "preconditions":[
+    "Isolated synthetic tenant-a and tenant-b, both have INC-001 with distinguishable data.",
+    "Signed tokens from isolated trusted test identity provider with wrong-audience fixtures.",
+    "Exact endpoint, status 403 versus masked 404 and ACL policy MUST be frozen before review; draft cannot execute as acceptance."
+  ],
+  "setup":[
+    "Store authoritative pre-state digests for tenant-a and tenant-b objects and event counters.",
+    "Store zero-state counter of mock ITSM tool invocations and redacted audit start position.",
+    "Record candidate git SHA, policy hash, source revision, fixture hash and test environment manifest."
+  ],
+  "steps":[
+    {"step_id":"S-01","stimulus":"Send authenticated tenant-a request for its own INC-001.","expected":"Allowed only with server-verified identity, object ACL and approved response fields.","observables":["HTTP response and redacted trace","Object state remains unchanged"]},
+    {"step_id":"S-02","stimulus":"Send tenant-a identity to request tenant-b INC-001 using attacker-controlled path/query/header.","expected":"The response is denied without foreign content; exact 403 or 404 must be frozen in approved endpoint contract.","observables":["HTTP status and response field allowlist","Policy decision and audit reference","Both tenant DB digests and mock ITSM invocation counter"]},
+    {"step_id":"S-03","stimulus":"Submit body containing forged tenant_id, role or is_admin fields.","expected":"Unknown fields are rejected by closed contract before mutation of any object or audit success receipt.","observables":["Schema validation rejection and trace","Event and receipt counters unchanged","Tool invocation counter unchanged"]}
+  ],
+  "negative_assertions":[
+    "No cross-tenant payload, snippet or sensitive fields in any response or trace.",
+    "No change to tenant-b state version, event count or object digest.",
+    "No unauthorized approval, no UAG tool call and no mock ITSM mutation.",
+    "No identity is trusted solely because X-Demo-Tenant or tenant_id was supplied."
+  ],
+  "evidence_plan":[
+    {"kind":"HTTP","description":"Sanitized raw HTTP request and response per step with verification timestamps.","hash_required":true},
+    {"kind":"DB_STATE","description":"Authoritative tenant A and B before/after snapshot state digests.","hash_required":true},
+    {"kind":"AUDIT","description":"Redacted deny decisions with trace references and no secret material.","hash_required":true},
+    {"kind":"TOOL_COUNTER","description":"Independent mock ITSM action call counts, before and after.","hash_required":true},
+    {"kind":"RUN_MANIFEST","description":"Git SHA, policy, schema, fixture and environment hashes bound to run ID.","hash_required":true}
+  ],
+  "expected_result":"PASS допускается исключительно после выполнения всех согласованных шагов и доказанного отсутствия побочных эффектов; при отсутствии среды или evidence — BLOCKED/INCONCLUSIVE.",
+  "review":{"owner":"UNASSIGNED","status":"PENDING"}
+}
