@@ -1,0 +1,13 @@
+flowchart LR
+  A[Books and standards / verified source locators] --> B[Requirements and threat register]
+  B --> C[Methodology and PМИ / reviewed]
+  C --> D[Approved test catalog and synthetic fixtures]
+  D --> E[Isolated test workers]
+  E --> F[Raw evidence and SHA256 ledger]
+  F --> G{Security gates}
+  G -->|FAIL / BLOCKED| H[Defect / versioned correction]
+  H --> D
+  G -->|PASS with evidence| P[Independent POLYGON]
+  P --> R{Human release approval}
+  R -->|No| H
+  R -->|Yes| S[Version-specific release]
