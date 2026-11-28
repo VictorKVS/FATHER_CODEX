@@ -74,6 +74,26 @@ class CatalogValidatorTests(unittest.TestCase):
         errors = validate_case(case, self.registry, self.schema, for_release=True)
         self.assertIn("RELEASE BLOCKED", " ".join(errors))
 
+    def test_unhashable_status_fails_closed(self):
+        case = self.clone()
+        case["status"] = ["QUALIFIED"]
+        self.assertIn("invalid status", " ".join(validate_case(case, self.registry, self.schema)))
+
+    def test_unhashable_source_id_fails_closed(self):
+        case = self.clone()
+        case["source_refs"][0]["source_id"] = ["BOOK-AGSEC"]
+        self.assertIn("unresolved source", " ".join(validate_case(case, self.registry, self.schema)))
+
+    def test_unhashable_evidence_kind_fails_closed(self):
+        case = self.clone()
+        case["evidence_plan"][0]["kind"] = ["HTTP"]
+        self.assertIn("bad or duplicate", " ".join(validate_case(case, self.registry, self.schema)))
+
+    def test_unhashable_registry_id_fails_closed(self):
+        registry = copy.deepcopy(self.registry)
+        registry["sources"][0]["source_id"] = ["BOOK-CD"]
+        self.assertIn("invalid source_id", " ".join(validate_registry(registry)))
+
     def test_catalog_scans_all_cases(self):
         self.assertEqual(validate_catalog(ROOT), {"SADEQ_API_001.json": []})
 
