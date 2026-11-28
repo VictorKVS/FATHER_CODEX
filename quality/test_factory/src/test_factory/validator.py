@@ -47,9 +47,13 @@ def validate_registry(registry: Any) -> list[str]:
             continue
         if any(not isinstance(src[k], str) or not src[k].strip() for k in allowed):
             errors.append(f"sources[{idx}]: source fields must be nonblank strings")
-        if src["source_id"] in ids:
+        sid = src["source_id"]
+        if not isinstance(sid, str):
+            errors.append(f"sources[{idx}]: invalid source_id type")
+            continue
+        if sid in ids:
             errors.append(f"sources[{idx}]: duplicate ID")
-        ids.add(src["source_id"])
+        ids.add(sid)
         if src["category"] not in {"book", "standard", "project"}:
             errors.append(f"sources[{idx}]: invalid category")
         if src["rights_status"] not in {"RESTRICTED", "REFERENCE_ONLY", "OPEN_REFERENCE", "PROJECT_OWNED"}:
@@ -77,7 +81,7 @@ def validate_case(case: Any, registry: Any, schema: Any, *, for_release: bool = 
         errors.append("case: unsupported version")
     if not isinstance(case["case_id"], str) or not ID_PATTERN.fullmatch(case["case_id"]):
         errors.append("case: invalid case_id")
-    if case["status"] not in STATUS:
+    if not isinstance(case["status"], str) or case["status"] not in STATUS:
         errors.append("case: invalid status")
     for key, minlen in (("system", 2), ("objective", 30), ("expected_result", 25)):
         if not isinstance(case[key], str) or len(case[key].strip()) < minlen:
@@ -100,11 +104,13 @@ def validate_case(case: Any, registry: Any, schema: Any, *, for_release: bool = 
             if not isinstance(ref, dict) or set(ref) != {"source_id", "locator", "application_note"}:
                 errors.append(f"source_refs[{idx}]: missing/unknown keys")
                 continue
-            if ref["source_id"] not in source_ids:
-                errors.append(f"source_refs[{idx}]: unresolved source {ref['source_id']}")
-            if ref["source_id"] in used:
+            source_id = ref["source_id"]
+            if not isinstance(source_id, str) or source_id not in source_ids:
+                errors.append(f"source_refs[{idx}]: unresolved source {source_id}")
+            elif source_id in used:
                 errors.append(f"source_refs[{idx}]: duplicate source")
-            used.add(ref["source_id"])
+            if isinstance(source_id, str):
+                used.add(source_id)
             if not isinstance(ref["locator"], str) or len(ref["locator"].strip()) < 3:
                 errors.append(f"source_refs[{idx}]: missing locator")
             if not isinstance(ref["application_note"], str) or len(ref["application_note"].strip()) < 10:
@@ -137,17 +143,19 @@ def validate_case(case: Any, registry: Any, schema: Any, *, for_release: bool = 
             if not isinstance(item, dict) or set(item) != {"kind", "description", "hash_required"}:
                 errors.append(f"evidence_plan[{idx}]: invalid structure")
                 continue
-            if item["kind"] not in EVIDENCE_KINDS or item["kind"] in kinds:
+            kind = item["kind"]
+            if not isinstance(kind, str) or kind not in EVIDENCE_KINDS or kind in kinds:
                 errors.append(f"evidence_plan[{idx}]: bad or duplicate evidence kind")
-            kinds.add(item["kind"])
+            if isinstance(kind, str):
+                kinds.add(kind)
             if item["hash_required"] is not True or not isinstance(item["description"], str) or len(item["description"].strip()) < 10:
                 errors.append(f"evidence_plan[{idx}]: require description and SHA256")
     review = case["review"]
     if not isinstance(review, dict) or set(review) != {"owner", "status"}:
         errors.append("case: review is malformed")
-    elif not isinstance(review["owner"], str) or len(review["owner"].strip()) < 3 or review["status"] not in {"PENDING", "APPROVED"}:
+    elif not isinstance(review["owner"], str) or len(review["owner"].strip()) < 3 or not isinstance(review["status"], str) or review["status"] not in {"PENDING", "APPROVED"}:
         errors.append("case: review owner/status invalid")
-    if case["status"] in {"REVIEWED", "APPROVED", "EXECUTED", "QUALIFIED"} and isinstance(review, dict) and review.get("status") != "APPROVED":
+    if isinstance(case["status"], str) and case["status"] in {"REVIEWED", "APPROVED", "EXECUTED", "QUALIFIED"} and isinstance(review, dict) and review.get("status") != "APPROVED":
         errors.append("case: advanced status without reviewer approval")
     if for_release:
         # An approved case alone must NEVER cause a release: separate qualification and human artifacts are required.
