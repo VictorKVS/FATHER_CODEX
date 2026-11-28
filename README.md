@@ -77,3 +77,10 @@ License: **not yet selected**. Public visibility does not grant an open-source l
 ## Secure Development / CyberED S-235
 
 - [FATHER NextGen School — S-235 «Основы безопасной разработки»](docs/school/courses/CYBERED_S235_SECURE_DEVELOPMENT_RU.md): пять модулей CyberED, адаптация для школьников, студентов, Junior / Master / Senior и POLYGON. Это регистрация учебного трека, **не подтверждение прохождения курса**.
+
+## FATHER Test Factory — библиотека и система испытаний
+
+- [Общая архитектура, книги, стандарты, модели угроз, ПМИ и каталог тестов](quality/test_factory/README.md)
+- [Карта первоисточников и их применения](quality/test_factory/docs/BOOKS_AND_STANDARDS.md)
+- [Первая машиночитаемая методика SADEQ API-001](quality/test_factory/catalog/cases/SADEQ_API_001.json)
+- [Исходный код валидатора](quality/test_factory/src/test_factory/validator.py), проверяется unit-тестами (на момент создания: **16 PASS** локально). Это **не** доказательство безопасности SADEQ; квалификация и допуск к выпуску заблокированы до независимых испытаний POLYGON и человеческого решения.
